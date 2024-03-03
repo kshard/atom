@@ -21,3 +21,9 @@ type HashMap interface {
 	Getter
 	Putter
 }
+
+// abstraction of permanent storage
+type Store interface {
+	Get([]byte) ([]byte, error)
+	Put([]byte, []byte) error
+}
