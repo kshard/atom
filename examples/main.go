@@ -20,7 +20,7 @@ const n = 1000000
 func main() {
 	var err error
 
-	atoms := atom.New(atom.NewMemMap())
+	atoms := atom.New(atom.NewEphemeralMap())
 	ids := make([]atom.Atom, n)
 
 	for i := 0; i < n; i++ {

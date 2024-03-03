@@ -30,7 +30,7 @@ The latest version of the library is available at `main` branch of this reposito
 import "github.com/kshard/atom"
 
 // Create new atoms table 
-atoms := atom.New(atom.NewMemMap())
+atoms := atom.New(atom.NewEphemeralMap())
 
 // Convert string to atom
 code := atoms.Atom("String interning")
@@ -38,6 +38,8 @@ code := atoms.Atom("String interning")
 // Convert atom back to string
 atoms.String(code)
 ```
+
+Use `atom.NewPermanentMap()` to implement atoms backed by either local permanent or external storage.
 
 ## How To Contribute
 
