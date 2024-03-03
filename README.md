@@ -71,3 +71,10 @@ If you experience any issues with the library, please let us know via [GitHub is
 ## License
 
 [![See LICENSE](https://img.shields.io/github/license/kshard/atom.svg?style=for-the-badge)](LICENSE)
+
+
+## References
+
+1. https://en.wikipedia.org/wiki/String_interning
+2. [String Interning in JVM](https://hg.openjdk.org/jdk7/jdk7/hotspot/file/tip/src/share/vm/classfile/symbolTable.cpp)
+3. Another approach on [String interning in Go](https://artem.krylysov.com/blog/2018/12/12/string-interning-in-go/) 
